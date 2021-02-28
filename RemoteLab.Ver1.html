@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Project Website Protoype</title>
+<script src="scriptfile.js"></script>
+<script src="index.js"></script>
+<!-- Style block -->
+<style>
+body {
+  background-color: lightblue;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+.FPGA{
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  
+}
+</style>
+<style>
+  #Sw1{
+    color: red;
+  }
+  }
+</style>
+</head>
+
+<body>
+  <h1> Remote Lab Prototype</h1>
+<!--
+  <div>
+    <form>
+         <input type = "file" name = "upload" accept = "image/*" />
+    </form>
+  </div>-->
+
+  <!--Clickable image of FPGA-->
+  <div>
+    <img src="FPGA_topView.jpg" alt = "Nexys FPGA" usemap="#FPGAmap" width="640" height="600" class="FPGA">
+
+    <map name="#FPGAmap">
+      <area shape="rect" coords="64,521,91,576" onclick="Popup('Switch 1')" alt="Switch1" href="#" id="Sw1">
+      <area shape="circle" coords="484,377,8" onclick="Popup('Center Button')" alt="BTNC" href="#">
+    </map>
+  </div>
+</body>
+
+</html>
+
+
